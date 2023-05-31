@@ -15,19 +15,19 @@ public class DriverConfig {
 
     switch (browser.toUpperCase()) {
 
-      case "Chrome" -> {
+      case "CHROME" -> {
 
         WebDriverManager.chromedriver().setup();
         return new ChromeDriver();
 
       }
-      case "Firefox" -> {
+      case "FIREFOX" -> {
 
         WebDriverManager.firefoxdriver().setup();
         return new FirefoxDriver();
 
       }
-      case "Edge" -> {
+      case "EDGE" -> {
 
         WebDriverManager.edgedriver().setup();
         return new EdgeDriver();

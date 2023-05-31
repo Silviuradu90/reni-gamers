@@ -45,8 +45,7 @@ public class LoginSteps extends BaseStep {
       boolean isTealColor = backgroundColor.equals("rgba(0, 128, 128, 1)");
 
       Assert.assertTrue(isTealColor, "actual color :"+ backgroundColor);
-      System.out.println("merge?"+ backgroundColor);
-      String ceva = "";
+
     }
 
 

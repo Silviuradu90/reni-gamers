@@ -1,5 +1,6 @@
 package com.reni.steps;
 
+import com.reni.core.exceptions.ReniExceptions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -67,6 +68,7 @@ public class LeftSideBarSteps extends BaseStep {
       case "LOGS" -> Assert.assertEquals(rf.getLeftSideBar().getLogsText(), "Logs");
       case "PROFILE" -> Assert.assertEquals(rf.getLeftSideBar().getProfileText(), "Profile");
       case "LOGOUT" -> Assert.assertEquals(rf.getLeftSideBar().getLogOutText(), "Log Out");
+      default -> throw new ReniExceptions("Nu exista acel text");
     }
 
   }

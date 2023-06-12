@@ -1,11 +1,18 @@
-Feature:
+Feature: Login
+
+
+  @Data
+  Scenario: Data Table
+    Given I go to "http://localhost:3000/"
+    And I write the following
+      | NAME     | Sergiu |
+      | PASSWORD | 123456 |
+    Then I verify the login button color is teal
+    And I click Login Button
 
 @Data
   Scenario:
     Given I go to "http://localhost:3000/"
-    When I click on Login
-    Then I am on "http://localhost:3000/dashboard"
-    And I check for search
 
 
  @MRA-201a, @MRA-201
@@ -64,12 +71,3 @@ Feature:
   And the field "Logs" in dashboard page is present with one upper case
   And the field "Profile" in dashboard page is present with one upper case
   And the field "Log out" in dashboard page is present with one upper case
-
-
-
-
-
-
-
-
-

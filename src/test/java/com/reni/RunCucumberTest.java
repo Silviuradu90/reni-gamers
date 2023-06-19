@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
     features = "src/test/resources/features",
     plugin = {"pretty", "json:target/cucumber-report/cucumber.json"},
     glue = {"com.reni.hooks", "com.reni.steps"},
-    tags = "@MRA-201"
+    tags = "@Data"
 )
 public class RunCucumberTest extends AbstractTestNGCucumberTests {
 

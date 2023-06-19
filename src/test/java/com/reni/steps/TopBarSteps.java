@@ -7,10 +7,7 @@ import org.testng.Assert;
 
 public class TopBarSteps extends BaseStep {
 
-  @Given("I go to {string}")
-  public void iGoTo(String arg0) {
-    driver.navigate().to("http://localhost:3000/dashboard");
-  }
+
 
   @And("the field {string} in dashboard page exists")
   public void theFieldIngetLeftSideBarExists(String field) {

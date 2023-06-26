@@ -50,7 +50,6 @@ public class LeftSideBar extends AbstractPage {
   @FindBy(xpath = "//*[@id=\"root\"]/div/div/div[1]/div[3]/div[2]]")
   private WebElement black_theme;
 
-
   public boolean isMainDisplayed() {
     return main.isDisplayed();
   }

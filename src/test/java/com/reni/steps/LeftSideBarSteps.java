@@ -1,18 +1,12 @@
 package com.reni.steps;
-
 import com.reni.core.exceptions.ReniExceptions;
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.testng.Assert;
 
 public class LeftSideBarSteps extends BaseStep {
-
-  @Given("I go to {string} page")
-  public void iGoToPage(String arg0) {
-    driver.navigate().to("http://localhost:3000/dashboard");
-  }
-
 
   @Then("the field {string} in dashboard page is present")
   public void theFieldInDashboardPageIsPresent(String field) {
@@ -69,6 +63,7 @@ public class LeftSideBarSteps extends BaseStep {
       case "PROFILE" -> Assert.assertEquals(rf.getLeftSideBar().getProfileText(), "Profile");
       case "LOGOUT" -> Assert.assertEquals(rf.getLeftSideBar().getLogOutText(), "Log Out");
       default -> throw new ReniExceptions("Nu exista acel text");
+
     }
 
   }

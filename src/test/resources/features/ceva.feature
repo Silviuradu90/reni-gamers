@@ -1,6 +1,5 @@
 Feature: Login
 
-
   @Data
   Scenario: Data Table
     Given I go to "http://localhost:3000/"
@@ -10,6 +9,9 @@ Feature: Login
     Then I verify the login button color is teal
     And I click Login Button
 
+@Data
+  Scenario:
+    Given I go to "http://localhost:3000/"
 
  @MRA-201a, @MRA-201
   Scenario:
@@ -193,12 +195,6 @@ Feature: Login
   Scenario:
     Given I visit "http://localhost:3000/dashboard"
     Then the id number for "Tracking ID" is present in dashboard page for each line
-
-
-
-
-
-
 
 
 

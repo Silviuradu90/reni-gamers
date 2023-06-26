@@ -106,6 +106,7 @@ public class DashboardPage extends AbstractPage {
   public boolean isEnergyChartDisplayed(){
     return energy_chart.isDisplayed();
   }
+
   public String getEnergyText(){
     return energy_text.getText();
   }
@@ -135,6 +136,9 @@ public class DashboardPage extends AbstractPage {
   }
   public boolean isEnergyMonthPercentageDisplayed(){
     return energy_month_percentage.isDisplayed();
+  }
+  public String getEergyText(){
+    return energy_text.getText();
   }
 
 
@@ -365,9 +369,7 @@ public class DashboardPage extends AbstractPage {
     return arrow_value;
   }
 
-
-
-  public String getUsersStatusColor(){
+  public String getUsersStaatusColor(){
     return users_color.getCssValue("color");
   }
   public String getProductsStatusColor(){
@@ -398,7 +400,6 @@ public class DashboardPage extends AbstractPage {
   public String getFunMonthStatusColor(){
     return fun_month_color.getCssValue("color");
   }
-
 
   @FindBy(xpath ="//*[@id=\"root\"]/div/div/div[2]/div[4]/div[2]/table/thead/tr")
   private  WebElement table_header;
@@ -666,6 +667,4 @@ public class DashboardPage extends AbstractPage {
   public String getTableIdField5Text(){
     return id_field5.getText();
   }
-
-
 }

@@ -71,3 +71,5 @@ Feature: Login
   And the field "Logs" in dashboard page is present with one upper case
   And the field "Profile" in dashboard page is present with one upper case
   And the field "Log out" in dashboard page is present with one upper case
+
+

@@ -14,7 +14,8 @@ public class LoginSteps extends BaseStep {
 
   @Given("I go to {string}")
 
-  public void goTo(String link) {
+
+  public void igoTo(String link) {
     driver.navigate().to(link);
   }
 
@@ -49,7 +50,8 @@ public class LoginSteps extends BaseStep {
     }
 
 
-  }
+
+}
 
 
 

@@ -70,6 +70,7 @@ Feature: Login
   And the field "Profile" in dashboard page is present with one upper case
   And the field "Log out" in dashboard page is present with one upper case
 
+
   @MRA-300
   Scenario:
     Given I visit "http://localhost:3000/dashboard"
@@ -195,6 +196,7 @@ Feature: Login
   Scenario:
     Given I visit "http://localhost:3000/dashboard"
     Then the id number for "Tracking ID" is present in dashboard page for each line
+
 
 
 

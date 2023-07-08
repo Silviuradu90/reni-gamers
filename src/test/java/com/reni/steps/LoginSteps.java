@@ -14,6 +14,7 @@ public class LoginSteps extends BaseStep {
 
   @Given("I go to {string}")
 
+
   public void igoTo(String link) {
     driver.navigate().to(link);
   }

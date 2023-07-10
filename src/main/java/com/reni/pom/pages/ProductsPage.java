@@ -1,10 +1,8 @@
 package com.reni.pom.pages;
 
 import com.reni.pom.AbstractPage;
-import io.cucumber.testng.AbstractTestNGCucumberTests;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.springframework.scheduling.support.SimpleTriggerContext;
 
 public class ProductsPage extends AbstractPage {
 
@@ -90,6 +88,13 @@ public class ProductsPage extends AbstractPage {
   private WebElement customer_field1;
   public String getCustomerField1Text(){
     return customer_field1.getText();
+  }
+
+
+  @FindBy (xpath =  "/html/body/div/div/div/div[2]/div[2]/div/table/tbody/tr[2]/td/div/div/div/div/table/tbody/tr[1]/td[2]")
+  public WebElement amountIsInt;
+  public int getAmountIsInt(){
+    return Integer.parseInt(amountIsInt.getText());
   }
 
 

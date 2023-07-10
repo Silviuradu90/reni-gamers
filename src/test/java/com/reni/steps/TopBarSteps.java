@@ -14,7 +14,6 @@ public class TopBarSteps extends BaseStep {
     switch (field.toUpperCase()) {
       case "SEARCHENGINE" -> Assert.assertTrue(rf.getTopBar().isSearchEngineDisplayed());
       case "LANGUAGEDISPLAYED" -> Assert.assertTrue(rf.getTopBar().isLanguageDisplayed());
-      case "LANGUAGETEXT" -> Assert.assertEquals(rf.getTopBar().getLanguageText(), "Woof Woof1");
       case "LANGUAGETEXT" -> Assert.assertEquals(rf.getTopBar().getLanguageText(), "Woof Woof");
       case "THEME" -> Assert.assertTrue(rf.getTopBar().isThemeDisplayed());
       case "NOTIFICATION" -> Assert.assertTrue(rf.getTopBar().isNotificationDisplayed());

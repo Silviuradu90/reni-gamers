@@ -5,6 +5,7 @@ import com.reni.pom.components.TopBar;
 import com.reni.pom.pages.DashboardPage;
 import com.reni.pom.pages.LoginPage;
 import com.reni.pom.pages.NewUsersPage;
+import com.reni.pom.pages.ProductsPage;
 import com.reni.pom.pages.UsersPage;
 import org.springframework.stereotype.Component;
 
@@ -18,6 +19,8 @@ public class Reni {
   private final LeftSideBar leftSideBar = new LeftSideBar();
 
   private final NewUsersPage newUsersPage = new NewUsersPage();
+
+  private final ProductsPage productsPage = new ProductsPage();
 
   public LoginPage getLoginPage() {
     return loginPage.initOnDemand();
@@ -42,6 +45,10 @@ public class Reni {
 
   public NewUsersPage newUsersPage(){
     return newUsersPage.initOnDemand();
+  }
+
+  public ProductsPage productsPage(){
+    return productsPage.initOnDemand();
   }
 
 

@@ -369,7 +369,7 @@ public class DashboardPage extends AbstractPage {
     return arrow_value;
   }
 
-  public String getUsersStaatusColor(){
+  public String getUsersStatusColor(){
     return users_color.getCssValue("color");
   }
   public String getProductsStatusColor(){

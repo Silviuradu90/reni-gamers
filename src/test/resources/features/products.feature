@@ -24,3 +24,8 @@ Feature: Products
   Scenario: Product Data Table
     Given I go to "http://localhost:3000/products"
     And the menu expands for Blackberries
+
+  @MRA-604
+  Scenario: Product Data Table
+    Given I go to "http://localhost:3000/products"
+    And I check that amount field from History is integer

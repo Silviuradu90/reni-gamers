@@ -67,5 +67,10 @@ public class ProductsSteps extends BaseStep{
   }
 
 
-
+  @And("I check that amount field from History is integer")
+  public void iCheckThatAmountFieldFromHistoryIsInteger() {
+    rf.productsPage().BlackberriesArrowClick();
+    Await.until(()->rf.productsPage().isBlackberriesExpandDisplayed());
+    Assert.assertEquals(rf.productsPage().getAmountIsInt(), 2);
+  }
 }
